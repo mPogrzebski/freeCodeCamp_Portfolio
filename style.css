@@ -9,7 +9,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
 
+body {
+    background-color: var(--secondar-color);
 }
 
 #navbar {
@@ -22,12 +25,11 @@
 
 ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    font-size: 2em;
+    font-size: 3em;
     list-style-type: none;
-
 }
 
 li a {
@@ -39,7 +41,6 @@ li a {
 
 
 #welcome-section {
-    background-color: var(--secondar-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,9 +48,19 @@ li a {
     justify-content: center;
 }
 
-h1 { font-size: 5rem;}
+h1 {
+    font-size: 5vw;
+}
+
+
+h2 {
+    font-size: 3em;
+    color: whitesmoke;
+    padding: 1em;
+}
 
 i {
+
     color: var(--tertiary-color);
     padding: 20px;
     margin-top: 40px;
@@ -57,4 +68,44 @@ i {
 
 i:hover {
     color: white;
+}
+
+#projects {
+    text-align: center;
+    background-color: var(--primary-color);
+
+    
+}
+
+
+
+.project-tile {
+    padding-bottom: 1rem;
+    margin: 1rem 1rem;
+    
+    text-align: center;
+    border: var(--tertiary-color) solid 2px;
+}
+
+.project-picture img {
+    width: 75%;
+    object-fit: cover;
+    height: auto;
+    margin: 10px;
+}
+
+footer {
+        color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--primary-color);
+    border-top: var(--tertiary-color) solid 2px;
+    padding: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: 0;
+
 }
