@@ -54,9 +54,11 @@ h1 {
 
 
 h2 {
+
     font-size: 3em;
     color: whitesmoke;
-    padding: 1em;
+    padding: 8vh;
+
 }
 
 i {
@@ -82,20 +84,19 @@ i:hover {
 .project-tile {
     padding-bottom: 1rem;
     margin: 1rem 1rem;
-    
     text-align: center;
     border: var(--tertiary-color) solid 2px;
 }
 
 .project-picture img {
-    width: 75%;
+    width: 50%;
     object-fit: cover;
     height: auto;
     margin: 10px;
 }
 
 footer {
-        color: whitesmoke;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,5 +108,10 @@ footer {
     padding-right: 10%;
     padding-left: 10%;
     margin: 0;
+}
 
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
 }
